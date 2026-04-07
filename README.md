@@ -1,6 +1,6 @@
 # 🏠 EstateHub — Full-Stack Real Estate Website
 
-A complete full-stack real estate platform built for CSC350.
+A complete full-stack real estate platform
 
 ## Tech Stack
 
@@ -133,36 +133,6 @@ npm run dev
 ```
 
 Open: **http://localhost:3000**
-
----
-
-## Demo Accounts
-
-| Role  | Username | Password  | Permissions                          |
-|-------|----------|-----------|--------------------------------------|
-| Admin | admin    | admin123  | Full control — CRUD all listings     |
-| Agent | agent1   | agent123  | Add listings, edit/manage own only   |
-| Agent | agent2   | agent123  | Add listings, edit/manage own only   |
-| Buyer | buyer1   | buyer123  | Browse, search, filter, save favs    |
-
----
-
-## API Endpoints
-
-| Method | Endpoint                  | Auth Required | Description               |
-|--------|---------------------------|---------------|---------------------------|
-| POST   | /api/auth/login           | No            | Login → returns JWT token |
-| POST   | /api/auth/register        | No            | Register new user         |
-| GET    | /api/listings             | No            | Get all listings (filter) |
-| POST   | /api/listings             | Agent/Admin   | Create new listing        |
-| GET    | /api/listings/[id]        | No            | Get single listing        |
-| PUT    | /api/listings/[id]        | Agent/Admin   | Update listing            |
-| DELETE | /api/listings/[id]        | Admin only    | Delete listing            |
-| GET    | /api/favourites           | Any user      | Get my favourites         |
-| POST   | /api/favourites           | Any user      | Add to favourites         |
-| DELETE | /api/favourites/[id]      | Any user      | Remove from favourites    |
-| POST   | /api/contact              | No            | Send contact message      |
-| GET    | /api/contact              | Admin only    | View all messages         |
 
 ---
 
